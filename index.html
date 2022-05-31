@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiselect</title>
+<script defer src="bundle.js"></script><link href="main.css" rel="stylesheet"></head>
+<body>
+    <p class="header">Multiselect</p>
+    <div class="wrapper">
+        <div class="left-column">
+            <fieldset class="select-industry select-industry-position">
+                <p class="select-industry__text">Select-industry</p>
+                <div class="select-industry__icon-wrapper">
+                    <div class="select-industry__icon"></div>
+                </div>
+            </fieldset>
+            <fieldset class="select-industry select-industry_active select-industry-position_active">
+                <legend>Industry</legend>
+                <p class="select-industry__text select-industry__text_active">2 items selected</p>
+                <div class="select-industry__icon-wrapper">
+                    <div class="select-industry__icon_active"></div>
+                </div>
+            </fieldset>
+            <form action="#" method="post">
+                <ul class="checkbox-list">
+                    <li class="checkbox-list__item">
+                        <label class="checkbox-list__label">
+                            <input type="checkbox" name="food/beverage" class="checkbox-list__checkbox">
+                            <div class="checkbox-list__fake-wrapper">
+                                <span class="checkbox-list__fake"></span>
+                            </div>
+                            <span class="checkbox-list__text">Food / beverage</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-list__item">
+                        <label class="checkbox-list__label">
+                            <input type="checkbox" name="travel" class="checkbox-list__checkbox">
+                            <div class="checkbox-list__fake-wrapper">
+                                <span class="checkbox-list__fake"></span>
+                            </div>
+                            <span class="checkbox-list__text">Travel</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-list__item">
+                        <label class="checkbox-list__label_special">
+                            <input type="checkbox" name="automotive" class="checkbox-list__checkbox" checked>
+                            <div class="checkbox-list__fake-wrapper">
+                                <span class="checkbox-list__fake"></span>
+                            </div>
+                            <div class="checkbox-list__container">
+                                <p class="checkbox-list__text">Automotive</p>
+                                <p class="checkbox-list__down-text">1 item selected</p>
+                            </div>
+                        </label>
+                    </li>
+                    <li class="checkbox-list__item">
+                        <label class="checkbox-list__label">
+                            <input type="checkbox" name="education" class="checkbox-list__checkbox" checked>
+                            <div class="checkbox-list__fake-wrapper">
+                                <span class="checkbox-list__fake"></span>
+                            </div>
+                            <span class="checkbox-list__text">Education</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-list__item">
+                        <label class="checkbox-list__label">
+                            <input type="checkbox" name="government" class="checkbox-list__checkbox">
+                            <div class="checkbox-list__fake-wrapper">
+                                <span class="checkbox-list__fake"></span>
+                            </div>
+                            <span class="checkbox-list__text">Government</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-list__item">
+                        <label class="checkbox-list__label">
+                            <input type="checkbox" name="nonprofit" class="checkbox-list__checkbox">
+                            <div class="checkbox-list__fake-wrapper">
+                                <span class="checkbox-list__fake"></span>
+                            </div>
+                            <span class="checkbox-list__text">Nonprofit</span>
+                        </label>
+                    </li>
+                    <li class="checkbox-list__item">
+                        <label class="checkbox-list__label">
+                            <input type="checkbox" name="other" class="checkbox-list__checkbox">
+                            <div class="checkbox-list__fake-wrapper">
+                                <span class="checkbox-list__fake"></span>
+                            </div>
+                            <span class="checkbox-list__text">Other</span>
+                        </label>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div class="right-column">
+            <fieldset class="select-industry select-industry-position">
+                <p class="select-industry__text">Select-industry</p>
+                <div class="select-industry__icon-wrapper">
+                    <div class="select-industry__icon"></div>
+                </div>
+            </fieldset>
+            <fieldset class="select-industry select-industry_active-right-column select-industry-position_active multiline">
+                <legend>Multiline amentities picked</legend>
+                <div class="multiline__container">
+                    <div class="multiline__row multiline__row-position">
+                        <div class="multiline__item multiline__item_active multiline__item-position">Free parking</div>
+                        <div class="multiline__item multiline__item-position">Pool</div>
+                        <div class="multiline__item multiline__item-position">Kitchen</div>
+                    </div>
+                    <div class="multiline__row multiline__row-position">
+                        <div class="multiline__row_left">
+                            <div class="multiline__item multiline__item-position">Bathroom</div>
+                            <div class="multiline__item multiline__item-position">Pet-friendly</div>
+                            <div class="multiline__item multiline__item-position">Free Wi-Fi</div>
+                        </div>
+                        <div class="multiline__row_right">
+                            <div class="cancel-button"></div>
+                        </div>
+                    </div>
+                    <div class="multiline__row multiline__row-position">
+                        <div class="multiline__item multiline__item-position">Gym</div>
+                        <div class="multiline__item multiline__item-position">Breakfast</div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="select-industry select-industry_active-right-column select-industry-position_active multiline amentities">
+                <legend>Amentities</legend>
+                <div class="amentities__items multiline__row amentities__items-position">
+                    <div class="multiline__item multiline__item-position amentities__item">Gym</div>
+                    <div class="multiline__item multiline__item-position amentities__item">Breakfast</div>
+                </div>
+                <label class="amentities__label">
+                    <input type="text" placeholder="People, places, events" class="amentities__input">
+                    <img src="images/search.svg" alt="search" class="amentities__img">
+                </label>
+                <form action="#" method="post">
+                    <ul class="checkbox-list checkbox-list-amentities">
+                        <li class="checkbox-list__item">
+                            <label class="checkbox-list__label">
+                                <input type="checkbox" name="food/beverage" class="checkbox-list__checkbox">
+                                <div class="checkbox-list__fake-wrapper">
+                                    <span class="checkbox-list__fake"></span>
+                                </div>
+                                <span class="checkbox-list__text">Bathroom</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-list__item">
+                            <label class="checkbox-list__label">
+                                <input type="checkbox" name="travel" class="checkbox-list__checkbox" checked>
+                                <div class="checkbox-list__fake-wrapper">
+                                    <span class="checkbox-list__fake"></span>
+                                </div>
+                                <span class="checkbox-list__text">Breakfast</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-list__item">
+                            <label class="checkbox-list__label">
+                                <input type="checkbox" name="education" class="checkbox-list__checkbox" checked>
+                                <div class="checkbox-list__fake-wrapper">
+                                    <span class="checkbox-list__fake"></span>
+                                </div>
+                                <span class="checkbox-list__text">Gym</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-list__item">
+                            <label class="checkbox-list__label">
+                                <input type="checkbox" name="government" class="checkbox-list__checkbox">
+                                <div class="checkbox-list__fake-wrapper">
+                                    <span class="checkbox-list__fake"></span>
+                                </div>
+                                <span class="checkbox-list__text">Free Parking</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-list__item">
+                            <label class="checkbox-list__label">
+                                <input type="checkbox" name="nonprofit" class="checkbox-list__checkbox">
+                                <div class="checkbox-list__fake-wrapper">
+                                    <span class="checkbox-list__fake"></span>
+                                </div>
+                                <span class="checkbox-list__text">Free Wi-Fi</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-list__item">
+                            <label class="checkbox-list__label">
+                                <input type="checkbox" name="other" class="checkbox-list__checkbox">
+                                <div class="checkbox-list__fake-wrapper">
+                                    <span class="checkbox-list__fake"></span>
+                                </div>
+                                <span class="checkbox-list__text">Pet-friendly</span>
+                            </label>
+                        </li>
+                    </ul>
+                    <ul class="checkbox-list checkbox-list-amentities2">
+                        <li class="checkbox-list__item">
+                            <label class="checkbox-list__label">
+                                <input type="checkbox" name="food/beverage" class="checkbox-list__checkbox">
+                                <div class="checkbox-list__fake-wrapper">
+                                    <span class="checkbox-list__fake"></span>
+                                </div>
+                                <span class="checkbox-list__text">I don`t need a toilet paper</span>
+                            </label>
+                        </li>
+                        <li class="checkbox-list__item">
+                            <label class="checkbox-list__label">
+                                <input type="checkbox" name="travel" class="checkbox-list__checkbox">
+                                <div class="checkbox-list__fake-wrapper">
+                                    <span class="checkbox-list__fake"></span>
+                                </div>
+                                <span class="checkbox-list__text">Please, wake me up at <span class="checkbox-list-amentities2__time">Set time</span></span>
+                            </label>
+                        </li>
+                    </ul>
+                </form>
+            </fieldset>
+        </div>
+    </div>
+</body>
+</html>
